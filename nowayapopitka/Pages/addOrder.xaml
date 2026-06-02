@@ -1,0 +1,35 @@
+﻿<Page x:Class="nowayapopitka.Pages.addOrder"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:nowayapopitka.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="addOrder">
+
+    <Grid Background="White">
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Text="Дата заказа" TextAlignment="Center"/>
+                <DatePicker x:Name="tborderDate" Width="150" Height="25"/>
+                <TextBlock Text="Дата доставки" TextAlignment="Center"/>
+                <DatePicker x:Name="tbdelivery" Width="150" Height="25"/>
+                <TextBlock Text="Код" TextAlignment="Center"/>
+                <TextBox x:Name="tbCode" Width="150" Height="25"/>
+                <TextBlock Text="Артикул заказа" TextAlignment="Center"/>
+                <ComboBox x:Name="tbProduct" DisplayMemberPath="Article" SelectedValuePath="Id" Width="150" Height="25"/>
+                <TextBlock Text="Cтатус заказа" TextAlignment="Center"/>
+                <ComboBox x:Name="tbStatus" DisplayMemberPath="Name" SelectedValuePath="Id" Width="150" Height="25"/>
+                <TextBlock Text="Адрес пункта выдачи заказа" TextAlignment="Center"/>
+                <ComboBox x:Name="tbPick" DisplayMemberPath="Address" SelectedValuePath="Id" Width="150" Height="25"/>
+                <TextBlock Text="Пользователь" TextAlignment="Center"/>
+                <ComboBox x:Name="tbUser" DisplayMemberPath="Fio" SelectedValuePath="Id" Width="150" Height="25"/>
+
+                <Button x:Name="Button" Click="AddProduct" Width="120" Height="25" Content="Добавить" Margin="0,0,0,10"/>
+
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

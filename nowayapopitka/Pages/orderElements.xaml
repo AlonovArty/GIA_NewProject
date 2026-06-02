@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="nowayapopitka.Pages.orderElements"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:nowayapopitka.Pages"
+             mc:Ignorable="d" >
+    <Grid Height="200" MinWidth="500">
+       
+
+        <StackPanel >
+            <TextBlock Text="123" x:Name="tbOrderDate"/>
+            <TextBlock Text="123" x:Name="tbProduct"/>
+            <TextBlock Text="123" x:Name="tbCode"/>
+            <TextBlock Text="123" x:Name="tbUser"/>
+            <TextBlock Text="123" x:Name="tborderStatus"/>
+            <TextBlock Text="123" x:Name="tbPick"/>
+       
+        </StackPanel>
+
+        <TextBlock Text="123" VerticalAlignment="Center" HorizontalAlignment="Right" x:Name="tbDelivery"/>
+
+        <StackPanel x:Name="Edits" VerticalAlignment="Bottom" HorizontalAlignment="Left" Orientation="Horizontal" Margin="10">
+            <Button Content="Изменить" Click="EditOrder" Margin="0,0,10,0" Width="100" Height="25"/>
+            <Button Content="Удалить" Click="DeleteOrder" Width="100" Height="25"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
