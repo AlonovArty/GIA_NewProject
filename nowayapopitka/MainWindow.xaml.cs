@@ -17,7 +17,7 @@ namespace nowayapopitka
     /// </summary>
     public partial class MainWindow : Window
     {
-
+        //
         public static MainWindow mainWindow;
         public static Model.User CurrectUser;
         public MainWindow()
